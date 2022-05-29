@@ -20,6 +20,7 @@ export default function LogInForm() {
     refetchQueries: [
       { query: GET_USER }
     ],
+    awaitRefetchQueries: true,
   });
   const errorMessage = error?.message || '';
   const isEmailValid =
